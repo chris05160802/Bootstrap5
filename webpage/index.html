@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity=
+    "sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        .coffee{
+            width: 24px;
+            height: 24px;
+        }
+        
+        .login{
+            transition: 0.3s;
+            color: #fff;
+        }
+
+        .login:hover{
+            color: #68472B;
+            background-color: #fff;
+        }
+
+        .sign-up{
+            transition: 0.3s;
+            color: #68472B;
+            background-color: #fff;
+        }
+
+        .sign-up:hover{
+            color: #fff;
+            background-color: #68472B;
+        }
+
+        .bg-cover{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 10%; 
+        }
+
+        .search{
+            border: 1px solid #825936;
+            background-color: #825936;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .search:hover{
+            background-color: #fff;
+            color: #825936;
+        }
+
+        .icon{
+            width: 24px;
+            height: 24px;
+        }
+        
+        .star{
+            width: 16px;
+            height: 16px;
+        }
+
+        .tag{
+            border-color: #F4F5F1 ;
+            background-color: #F4F5F1;
+        }
+
+        .contact{
+            width: 32px;
+            height: 32px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="d-flex flex-row justify-content-between w-100 py-2 px-5" style="background-color: #68472B;">
+            <div class="d-flex flex-row align-items-center">
+                <a class="px-1" href="#"><img class="coffee" src="https://cdn-icons-png.flaticon.com/512/3071/3071581.png" alt=""></a>
+                <a class="text-decoration-none text-white px-1" href="#"><strong>找找</strong><span>咖啡</span></a>
+            </div>
+            <div class="d-none d-md-block">
+                <div class="d-flex flex-row">
+                    <a href="#" class="text-decoration-none"><p class="p-2 m-2 text-white">搜尋咖啡廳</p></a>
+                    <a href="#" class="text-decoration-none"><p class="px-4 py-2 m-2 border border-white rounded-5 login">登入</p></a>
+                    <a href="#" class="text-decoration-none"><p class="px-4 py-2 m-2 border border-white rounded-5 sign-up">註冊</p></a>
+                </div>
+            </div>
+            <!-- navbar button -->
+            <nav class="navbar d-md-none">
+                <div class="container-fluid">
+                  <button class="navbar-toggler bg-white border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="box-shadow: none;">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #E5DCD4;">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">找找咖啡</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">登入</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">註冊</a>
+                          </li>
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </nav>
+        <!-- navbar button -->
+        </nav>
+        <div class="p-md-5 p-2 bg-cover" style="background-image: url(https://media.istockphoto.com/id/1326419180/photo/beautiful-woman-relaxing-and-drinking-hot-tea.jpg?b=1&s=170667a&w=0&k=20&c=MO-V_7EPNz6eVvosWpNo6XtNycKcMiHqK6ci6txJ0vE=); height: 420px;">
+            <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                <div class="m-2 p-2 w-100">
+                    <h1 class="text-white mb-3 ">找到專屬於你的咖啡廳</h1>
+                    <div class="d-flex flex-row">
+                        <div class="input-group mx-2 mb-3 w-50" style="max-width: 320px;">
+                            <input type="text" class="form-control" placeholder="搜尋關鍵字..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>                   
+                        <div class="dropdown d-inline mx-2">
+                            <button class="btn btn-secondary dropdown-toggle bg-white text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            台北
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">新北</a></li>
+                            <li><a class="dropdown-item" href="#">桃園</a></li>
+                            <li><a class="dropdown-item" href="#">台中</a></li>
+                            <li><a class="dropdown-item" href="#">高雄</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="px-4 py-2 m-3 rounded-5 text-decoration-none search">搜索</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="p-1 p-md-4" style="background-color: #E5DCD4;">
+        <div class="container text-center my-3 py-2 my-lg-1 py-lg-1">
+            <a class="px-1" href="#"><img class="coffee" src="https://cdn-icons-png.flaticon.com/512/3071/3071581.png" alt="" style="width: 40px; height: 40px;"></a>
+            <p class="w-75 mx-auto my-2" style="max-width: 448px;">當人們需要個喝咖啡的地方時，往往會陷入不知道要去哪裡、哪裡有咖啡廳、咖啡廳不符合需求的窘境。為了解決這樣的問題，我們架設了這個網站，希望能幫助你找到<strong>最適合你的咖啡廳。</strong></p>
+        </div>
+    </div>
+    <div class="column w-100">
+        <div class="col row w-100 mx-0 mb-md-5 d-md-flex flex-md-row-reverse d-flex flex-column-reverse">
+            <div class="container col-md-5 d-flex flex-column justify-content-center" style="background-color: #F7F6F6;">
+                <div class="mx-4 w-75 my-5 my-mb-0">
+                    <h5 class="fs-3 mb-3" style="color: #68472B;">搜尋咖啡廳<img class="icon mx-2"src="https://cdn-icons-png.flaticon.com/512/2811/2811806.png" alt=""></h5>
+                    <p class="fw-lighter">你可以在這裡尋找符合你需求的咖啡廳，為你的工作、學習，或著悠閒的午後時光找一個適合的好地方。</p>
+                </div>
+            </div>
+            <img class="col-md-7 bg-cover p-0" src="../image/Frame 7.png" alt="">
+        </div>
+        <div class="col row w-100 mx-0 mb-md-5 d-md-flex flex-md-row d-flex flex-column-reverse">
+            <div class="conteiner col-md-5 d-flex flex-column justify-content-center align-items-md-end" style="background-color: #F7F6F6;">
+                <div class="mx-4 w-75 my-5 my-mb-0">
+                    <h5 class="fs-3 mb-3" style="color: #68472B;">評價 ,收藏咖啡廳<img class="icon mx-2" src="../image/Vector (1).png" alt=""></h5>
+                    <p class="m-0 fw-lighter">為你造訪過的咖啡廳下評論吧！</p>
+                    <p class="fw-lighter">不僅僅可以讓更多用戶了解這間咖啡廳，也可以為你留下足跡，繪出屬於你的咖啡地圖！此外，你更可以將喜歡的咖啡廳加入我的最愛，方便再度造訪！</p>
+                </div>
+            </div>
+            <img class="col-md-7 bg-cover p-0" src="../image/Frame 9.png" alt="">
+        </div>
+        <div class="col row w-100 mx-0 mb-md-5 d-md-flex flex-md-row-reverse d-flex flex-column-reverse">
+            <div class="conteiner col-md-5 d-flex flex-column justify-content-center" style="background-color: #F7F6F6;">
+                <div class="mx-4 w-75 my-5 my-mb-0">
+                    <h5 class="fs-3 mb-3" style="color: #68472B;">新增咖啡廳<img class="icon mx-2" src="https://cdn-icons-png.flaticon.com/512/568/568717.png" alt=""></h5>
+                    <p class="m-0 fw-lighter">找不到你心愛中的咖啡廳嗎？你可以自己新增上來！</p>
+                    <p class="fw-lighter">填寫幾個店家的基本資訊，並附上幾張照片以及你的心得、評價，就可以將你喜歡的咖啡廳推薦給其他使用者！</p>
+                </div>
+            </div>
+            <img class="col-md-7 bg-cover p-0" src="../image/Frame 11.png" alt="">
+        </div>
+    </div>
+    <div class="mb-5">
+        <div class="container w-100" style="max-width: 1200px;">
+            <h2 class="text-center fs-1 my-3" style="color: #68472B;">精選店家</h2>
+            <div class="column">
+                <div class="col row row-cols-1 row-cols-md-3 gx-4">
+                    <div class="col mb-4 p-1 p-lg-3">
+                        <img class="w-100 mb-4 mb-md-2" src="../image/Frame 18.png" alt="">
+                        <div class="px-1 px-lg-2">
+                            <div class="d-flex flex-row justify-content-between mb-1">
+                                <p class="fs-5 fw-bold d-inline" style="color: #44413F;">稼咖啡</p>
+                                <div>
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 5.png" alt="">
+                                </div>
+                            </div>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">裝潢漂亮</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">平日不限時</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">咖啡好喝</small>
+                        </div>
+                    </div>
+                    <div class="col mb-4 p-1 p-lg-3">
+                        <img class="w-100 mb-4 mb-md-2" src="../image/Frame 18 (1).png" alt="">
+                        <div class="px-1 px-lg-2">
+                            <div class="d-flex flex-row justify-content-between mb-1">
+                                <div class="mb-3">
+                                    <p class="fs-5 fw-bold d-inline" style="color: #44413F;">路易莎</p>
+                                    <small class="mx-1">內湖門市</small>
+                                </div>
+                                <div>
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 5.png" alt="">
+                                </div>
+                            </div>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">有插座</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">不限時</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">座位多</small>
+                        </div>
+                    </div>
+                    <div class="col mb-4 p-1 p-lg-3">
+                        <img class="w-100 mb-4 mb-md-2" src="../image/Frame 18 (2).png" alt="">
+                        <div class="px-1 px-lg-2">
+                            <div class="d-flex flex-row justify-content-between mb-1">
+                                <div class="mb-3">
+                                    <p class="fs-5 fw-bold d-inline" style="color: #44413F;">星巴克</p>
+                                    <small class="mx-1">府中門市</small>
+                                </div>
+                                <div>
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 5.png" alt="">
+                                </div>
+                            </div>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">空間寬敞</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">不限時</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">座位多</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col row row-cols-1 row-cols-md-3 gx-4">
+                    <div class="col mb-4 p-1 p-lg-3">
+                        <img class="w-100 mb-4 mb-md-2" src="../image/Frame 18 (5).png" alt="">
+                        <div class="px-1 px-lg-2">
+                            <div class="d-flex flex-row justify-content-between mb-1">
+                                <p class="fs-5 fw-bold d-inline" style="color: #44413F;">稼咖啡</p>
+                                <div>
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 5.png" alt="">
+                                </div>
+                            </div>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">裝潢漂亮</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">平日不限時</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">咖啡好喝</small>
+                        </div>
+                    </div>
+                    <div class="col mb-4 p-1 p-lg-3">
+                        <img class="w-100 mb-4 mb-md-2" src="../image/Frame 18 (4).png" alt="">
+                        <div class="px-1 px-lg-2">
+                            <div class="d-flex flex-row justify-content-between mb-1">
+                                <div class="mb-3">
+                                    <p class="fs-5 fw-bold d-inline" style="color: #44413F;">路易莎</p>
+                                    <small class="mx-1">內湖門市</small>
+                                </div>
+                                <div>
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 5.png" alt="">
+                                </div>
+                            </div>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">有插座</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">不限時</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">座位多</small>
+                        </div>
+                    </div>
+                    <div class="col mb-4 p-1 p-lg-3">
+                        <img class="w-100 mb-4 mb-md-2" src="../image/Frame 18 (3).png" alt="">
+                        <div class="px-1 px-lg-2">
+                            <div class="d-flex flex-row justify-content-between mb-1">
+                                <div class="mb-3">
+                                    <p class="fs-5 fw-bold d-inline" style="color: #44413F;">星巴克</p>
+                                    <small class="mx-1">府中門市</small>
+                                </div>
+                                <div>
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 5.png" alt="">
+                                </div>
+                            </div>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">空間寬敞</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">不限時</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">座位多</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col row row-cols-1 row-cols-md-3 gx-4">
+                    <div class="col mb-4 p-1 p-lg-3">
+                        <img class="w-100 mb-4 mb-md-2" src="../image/Frame 18 (8).png" alt="">
+                        <div class="px-1 px-lg-2">
+                            <div class="d-flex flex-row justify-content-between mb-1">
+                                <p class="fs-5 fw-bold d-inline" style="color: #44413F;">稼咖啡</p>
+                                <div>
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 5.png" alt="">
+                                </div>
+                            </div>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">裝潢漂亮</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">平日不限時</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">咖啡好喝</small>
+                        </div>
+                    </div>
+                    <div class="col mb-4 p-1 p-lg-3">
+                        <img class="w-100 mb-4 mb-md-2" src="../image/Frame 18 (7).png" alt="">
+                        <div class="px-1 px-lg-2">
+                            <div class="d-flex flex-row justify-content-between mb-1">
+                                <div class="mb-3">
+                                    <p class="fs-5 fw-bold d-inline" style="color: #44413F;">路易莎</p>
+                                    <small class="mx-1">內湖門市</small>
+                                </div>
+                                <div>
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 5.png" alt="">
+                                </div>
+                            </div>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">有插座</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">不限時</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">座位多</small>
+                        </div>
+                    </div>
+                    <div class="col mb-4 p-1 p-lg-3">
+                        <img class="w-100 mb-4 mb-md-2" src="../image/Frame 18 (6).png" alt="">
+                        <div class="px-1 px-lg-2">
+                            <div class="d-flex flex-row justify-content-between mb-1">
+                                <div class="mb-3">
+                                    <p class="fs-5 fw-bold d-inline" style="color: #44413F;">星巴克</p>
+                                    <small class="mx-1">府中門市</small>
+                                </div>
+                                <div>
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 4.png" alt="">
+                                    <img class="star d-inline" src="../image/Star 5.png" alt="">
+                                </div>
+                            </div>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">空間寬敞</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">不限時</small>
+                            <small class="fw-semibold px-2 py-1 border rounded-5 tag" style="color: #5A653D;">座位多</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center"> 
+                <a href="#" class="text-decoration-none px-3 py-2 rounded-5" style="color: #F7F6F6; border-color: #825936; background-color: #825936;">瀏覽更多</a>
+            </div>
+        </div>
+    </div>
+    <div class="mt-3" style="background-color: #68472B;">
+        <div class="container py-2 pt-md-5 pb-md-2" style="max-width: 960px;">
+            <div class="row d-flex flex-row justify-content-between mx-auto mb-3">
+                <div class="col-auto row d-flex flex-column flex-md-row">
+                    <div class="col-auto p-2 m-2">
+                        <a class="text-white text-decoration-none w-75" href="#">HOME</a>
+                    </div>
+                    <div class="col-auto p-2 m-2">
+                        <a class="text-white text-decoration-none w-75" href="#">SEARCH</a>
+                    </div>
+                    <div class="col-auto p-2 m-2">
+                        <a class="text-white text-decoration-none w-75" href="#">LOGOUT</a>
+                    </div>
+                    <div class="col-auto p-2 m-2">
+                        <a class="text-white text-decoration-none w-75" href="#">MY ACCOUNT</a>
+                    </div>
+                </div>
+                <div class="col-4 d-flex flex-row justify-content-end">
+                    <div class="col-auto m-2">
+                        <a href="#">
+                            <img class="contact" src="../image/facebook.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-auto m-2">
+                        <a href="#">
+                            <img class="contact"src="../image/instagram.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-auto m-2">
+                        <a href="#">
+                            <img class="contact"src="../image/mail (4).png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-white fw-lighter mb-2 mb-md-1">Copyright © 2022 Justin Chen. All rights reserved. </p>
+        </div>
+    </div>
+</body>
+</html>
