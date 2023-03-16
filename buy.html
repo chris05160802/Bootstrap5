@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    
+    <style>
+        html{
+          font-family: 'Noto Sans',sans-serif;
+        }
+
+        .header{
+            height: 180px;
+        }
+
+        .deco-line{
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .deco-line::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #0DCAF0;
+        }
+
+        .input-btn:focus{
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container">
+          <a class="navbar-brand" href="../047/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-fill text-info" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
+            </svg>小懶蟲
+        </a>
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link mx-3" aria-current="page" href="../047/index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#">服務介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3 text-info" href="../047/buy.html">方案費用</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="../047/QA.html">常見問題</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-info" href="../047/buy.html">方案費用</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header" style="background-image: url(../047/image/bg_paper.png);">
+    <div class="py-5 text-center">
+        <p class="text-info fw-bold mb-2">HAPPY LIFE</p>
+        <h1 class="fw-bold">開始當個小懶蟲</h1>
+    </div>
+  </header>
+
+  <section class="py-5  container">
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-8">
+            <form action="" class="p-lg-4 mb-5 mb-lg-0">
+                <h3 class="deco-line mb-3 mb-lg-4">選擇方案</h3>
+                <div class="row row-cols-1 row-cols-lg-3 g-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-info text-dark w-100 btn-lg py-3 fs-6">
+                            小小搭懶蟲<br class="d-none d-lg-block">
+                            NT 298/月
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-info text-dark w-100 btn-lg py-3 fs-6">
+                            睡一整天囉<br class="d-none d-lg-block">
+                            NT 666/月
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-info text-white w-100 btn-lg py-3 fs-6 bg-info shadow">
+                            客製化方案<br class="d-none d-lg-block">
+                            客服詢價
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <form action="" class="p-lg-4">
+                <h3 class="deco-line mb-2 mb-lg-4">填寫資料</h3>
+                <div class="column">
+                    <div class="col row row-cols-1 row-cols-lg-2 ">
+                        <div class="col">
+                            <small>名字</small>
+                            <div class="input-group flex-nowrap my-2">
+                                <input type="text" class="form-control input-btn" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <small>姓氏</small>
+                            <div class="input-group flex-nowrap my-2">
+                                <input type="text" class="form-control input-btn" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <small>手機號碼</small>
+                        <div class="input-group flex-nowrap my-2">
+                            <input type="text" class="form-control input-btn" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                        <small>電子郵件</small>
+                        <div class="input-group flex-nowrap my-2">
+                            <input type="text" class="form-control input-btn" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                        <small>住址</small>
+                        <div class="input-group flex-nowrap my-2">
+                            <input type="text" class="form-control input-btn" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <small>方便聯繫時間</small>
+                        <div class="input-group my-2">
+                            <select class="form-select input-btn" id="inputGroupSelect01">
+                              <option value="1">8:00 ~ 12:00</option>
+                              <option value="2">12:00 ~ 16:00</option>
+                              <option value="3">16:00 ~ 20:00</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col mb-2">
+                        <small>加購服務</small>
+                        <div class="my-2">
+                            <div class="me-3 d-inline">
+                                <input class="form-check-input input-btn" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                <small>每週一清掃家裡+100</small>
+                            </div>
+                            <div class="me-3 d-inline">
+                                <input class="form-check-input input-btn" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                <small>按摩+50</small>
+                            </div>
+                            <div class="me-3 d-lg-inline">
+                                <input class="form-check-input input-btn" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                <small>聽你說話+150</small>
+                            </div>
+                        </div>
+                        <div class="my-2">
+                            <small>備註說明</small>
+                            <div class="input-group flex-nowrap my-2">
+                                <input type="text" class="form-control input-btn" aria-label="Username" aria-describedby="addon-wrapping" style="height: 86px;">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </form>
+            <div class="p-lg-4">
+                <button class="btn btn-info w-100" style="height: 45px;">選擇方案</button>
+            </div>
+        </div> 
+    </div>
+  </section>
+  <footer style="background-color: #FFF8F9FA;">
+    <div class="container py-4 py-lg-5 px-5 text-center">
+        <h3>需要其他協助嗎?</h3>
+        <div class="row row-cols-1 row-cols-lg-3 my-3 g-3">
+            <div class="col">
+                <div class="card ">
+                    <div class="card-body">
+                      <h5 class="card-title m-0 fw-normal text-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-phone-fill text-info mx-1 mb-1" viewBox="0 0 16 16">
+                            <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                        </svg>07-555-666</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <div class="card-body">
+                      <h5 class="card-title m-0 fw-normal text-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook text-info mx-1 mb-1" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>我就是個小懶蟲</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <div class="card-body">
+                      <h5 class="card-title m-0 fw-normal text-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-question-lg text-info mb-1" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"/>
+                        </svg>常見問題</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-secondary">
+        <div class="container py-3 text-center">
+            <small class="text-white">Copyright © 2021 小懶蟲.All rights reserved.</small>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
