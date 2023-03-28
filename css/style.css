@@ -1,0 +1,23 @@
+html{
+    font-family: 'Noto Sans',sans-serif;
+}
+
+.header{
+    height: 627px;
+    background-size: cover;
+    background-position: bottom center;
+    background-image: url(../image/home_bg.jpg);
+}
+
+.icon{
+    width: 42px;
+    height: 48px;
+}
+
+.bg-paper{
+    background-image: url(../image/bg_paper.png);
+}
+
+.footer{
+    background-color: #FFF8F9FA;
+}

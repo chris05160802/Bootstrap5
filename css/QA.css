@@ -1,0 +1,19 @@
+html{
+    font-family: 'Noto Sans',sans-serif;
+}
+
+.header{
+    background-image: url(../image/bg_paper.png);
+}
+
+section{
+    max-width: 735px;
+}
+
+.list{
+    background-color: #C4E1FF;
+}
+
+.footer{
+    background-color: #FFF8F9FA;;
+}

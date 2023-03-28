@@ -1,0 +1,49 @@
+html{
+    font-family: 'Noto Sans',sans-serif;
+}
+
+.header{
+    height: 180px;
+    background-image: url(../image/bg_paper.png);
+}
+
+section{
+    box-shadow: 0 0 10px 5px #E0E0E0;
+}
+
+.deco-line{
+    padding-left: 1rem;
+    position: relative;
+}
+
+.deco-line::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #0DCAF0;
+}
+
+.input-btn:focus{
+    box-shadow: none;
+}
+
+.remark{
+    height: 86px;
+}
+
+.choose{
+    height: 45px;
+}
+
+.footer{
+    background-color: #FFF8F9FA;
+}
+
+@media screen and (max-width: 992px){
+    section{
+        box-shadow: none;
+    }
+}
