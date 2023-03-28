@@ -1,0 +1,135 @@
+.banner{
+    background-color: #68472B;
+}
+
+.header{
+    background-image: url(https://media.istockphoto.com/id/1326419180/photo/beautiful-woman-relaxing-and-drinking-hot-tea.jpg?b=1&s=170667a&w=0&k=20&c=MO-V_7EPNz6eVvosWpNo6XtNycKcMiHqK6ci6txJ0vE=); 
+    height: 420px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 10%; 
+}
+
+.input-group{
+    max-width: 320px;
+}
+
+.narrative-coffee{
+    width: 40px; 
+    height: 40px
+}
+
+.coffee{    
+    width: 24px;
+    height: 24px;
+}
+        
+.login{
+    transition: 0.3s;
+    color: #fff;
+}
+
+.login:hover{
+    colo #68472B;
+    background-color: #fff;
+}
+
+.sign-up{
+    transition: 0.3s;
+    color: #68472B;
+    background-color: #fff;
+}
+
+.sign-up:hover{
+    color: #fff;
+    background-color: #68472B;
+}
+
+.bg-cover{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 10%; 
+}
+
+.search{
+    border: 1px solid #825936;
+    background-color: #825936;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.search:hover{
+    background-color: #fff;
+    color: #825936;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+        
+.star{
+    width: 16px;
+    height: 16px;
+}
+
+.tag{
+    border-color: #F4F5F1 ;
+    background-color: #F4F5F1;
+    color: #5A653D;
+}
+
+.contact{
+    width: 32px;
+    height: 32px;
+}
+
+.narrative{
+    background-color: #E5DCD4;
+}
+
+.items{
+    background-color: #F7F6F6;
+}
+
+.featured{
+    color: #68472B;
+}
+
+.featured-title{
+    color: #44413F;
+}
+
+.navbar-toggler{
+    box-shadow: none;
+}
+
+.offcanvas{
+    background-color: #E5DCD4;
+}
+
+.article{
+    max-width: 448px;
+}
+
+.items-title{
+    color: #68472B;
+}
+
+.shop{
+    max-width: 1200px;
+}
+
+.more{
+    color: #F7F6F6; 
+    border-color: #825936; 
+    background-color: #825936;
+}
+
+.footer{
+    background-color: #68472B;
+}
+
+.package{
+    max-width: 1040px;
+}
